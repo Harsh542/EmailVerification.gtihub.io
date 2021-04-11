@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email verfication</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <p id="first" class="heading">Email verfication</p>
+    <p id="second" class="heading">(verify any email)</p>
+    <form>
+        <input id="text1" type="text" placeholder="Enter Email" autocomplete="off"/>
+        <label id="lbltext" style="color:red; visibility:hidden">Invalid</label><br>
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+    <script type="text/javascript">
+        function validate() {
+            var text = document.getElementById("text1").value;
+
+            var regx = /^([a-zA-Z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+            if (regx.test(text)) {
+                document.getElementById("lbltext").innerHTML = "This is a Valid Email.";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color = "green";
+            }
+            else {
+                document.getElementById("lbltext").innerHTML = "This is not a Valid Email.";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

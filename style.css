@@ -1,0 +1,55 @@
+#text1{
+    background-color:black;
+    color:rgb(26, 139, 204);
+    padding: 10px;
+   font-size: 30px;
+    border: 0px;
+    border-bottom:2px solid rgb(26, 139, 204);
+    outline: none;
+    font-family: sans-serif;
+}
+#lbltext{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+body{
+    background-color:black;
+}
+::placeholder{
+    padding-left:25%;
+    color: rgb(26, 139, 204);
+    font-family: sans-serif;
+}
+form{
+    margin:15% 35%;
+}
+button{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(26, 139, 204);
+    border-color: rgb(26, 139, 204);
+    background-color: black;
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 5px 10px;
+    margin-left:120px ;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(26, 139, 204);
+    color:black;
+}
+#first{
+    color: chartreuse;
+    font-family:cursive;
+    font-size: 50px;
+    margin-left: 360px;
+}
+.heading{
+    display: inline;
+}
+#second{
+    color: rgb(235, 97, 17);
+    font-family:cursive;
+    font-size: 30px;
+}
